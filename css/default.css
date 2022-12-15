@@ -111,7 +111,7 @@ body {
 }
 .grid .column .colums_div {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 24px;
   margin-bottom: 1%;
   border-radius: 10px;
   width: calc(100% - 3rem);
@@ -142,6 +142,8 @@ body {
   font-size: 36px;
   line-height: 44px;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 .grid .column .colums_div p {
   font-weight: 400;
@@ -150,7 +152,8 @@ body {
   letter-spacing: 0.15px;
   color: #46464f;
 }
-.grid .column .colums_div p span {
+.grid .column .colums_div p span,
+.grid .column .colums_div p a {
   color: #1e6671;
 }
 .grid .column .colums_div table tr td:first-child {
