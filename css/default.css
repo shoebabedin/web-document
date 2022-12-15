@@ -68,7 +68,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   width: calc(100% - 10%);
-  height: calc(100vh - 5%);
+  height: calc(100vh - 8%);
   border-radius: 10px;
   background-color: #fff;
   padding: 16px;
