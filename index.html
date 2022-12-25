@@ -6,501 +6,458 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/default.css" />
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
-    <div class="grid">
-      <!-- navbar -->
-      <div class="column">
-        <div class="nav">
-          <div class="nav-img">
-            <img src="./img/logo.png" alt="" />
+    <div class="container-fluid">
+      <div class="row">
+        <!-- navbar -->
+        <div class="col-lg-2">
+          <div
+            class="nav align-items-start justify-content-start w-100 left-nav"
+          >
+            <div class="nav-img navbar-brand">
+              <img class="img-fluid" src="./img/logo.png" alt="" />
+            </div>
+            <ul
+              class="navbar-nav nav nav-tabs gap-3 w-100"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="introduction-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#introduction"
+                  type="button"
+                  role="tab"
+                  aria-controls="introduction"
+                  aria-selected="true"
+                >
+                  Introduction
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="">Getting Started</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="what_included-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#what_included"
+                  type="button"
+                  role="tab"
+                  aria-controls="what_included"
+                  aria-selected="false"
+                >
+                  What's Included
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="">Settings</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="title_favicon-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#title_favicon"
+                  type="button"
+                  role="tab"
+                  aria-controls="title_favicon"
+                  aria-selected="false"
+                >
+                  Site Title and Favicon
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="logo-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#logo"
+                  type="button"
+                  role="tab"
+                  aria-controls="logo"
+                  aria-selected="false"
+                >
+                  Logo
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="menu-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#menu"
+                  type="button"
+                  role="tab"
+                  aria-controls="menu"
+                  aria-selected="false"
+                >
+                  Menu
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="footer-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#footer"
+                  type="button"
+                  role="tab"
+                  aria-controls="footer"
+                  aria-selected="false"
+                >
+                  Footer
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="">Credit</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="credit_fonts-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#credit_fonts"
+                  type="button"
+                  role="tab"
+                  aria-controls="credit_fonts"
+                  aria-selected="false"
+                >
+                  Credit (Fonts)
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="credit_css-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#credit_css"
+                  type="button"
+                  role="tab"
+                  aria-controls="credit_css"
+                  aria-selected="false"
+                >
+                  Credit (CSS)
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="credit_js-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#credit_js"
+                  type="button"
+                  role="tab"
+                  aria-controls="credit_js"
+                  aria-selected="false"
+                >
+                  Credit (Javascript)
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="credit_images-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#credit_images"
+                  type="button"
+                  role="tab"
+                  aria-controls="credit_images"
+                  aria-selected="false"
+                >
+                  Credit (Images)
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="support-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#support"
+                  type="button"
+                  role="tab"
+                  aria-controls="support"
+                  aria-selected="false"
+                >
+                  Support
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="thanks-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#thanks"
+                  type="button"
+                  role="tab"
+                  aria-controls="thanks"
+                  aria-selected="false"
+                >
+                  Thanks
+                </button>
+              </li>
+            </ul>
           </div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <button class="page-scroll active">Introduction</button>
-            </li>
-            <li class="nav-item">
-              <a href="">Getting Started</a>
-              <ul>
-                <li>
-                  <button class="page-scroll non-active">
-                    What's Included
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="">Settings</a>
-              <ul>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Site Title and Favicon
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Logo
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Menu
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Footer
-                  </button>
-                </li>
-                <!-- <li>
-                  <button class="page-scroll non-active non-active">
-                    Copyright
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Section Components
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Page Banner
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Social Networks
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Font Family Change
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active non-active">
-                    Color Change
-                  </button>
-                </li> -->
-              </ul>
-            </li>
-            <li class="nav-item" id="">
-              <a href="">Credit</a>
-              <ul>
-                <li>
-                  <button class="page-scroll non-active">Credit (Fonts)</button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active">Credit (CSS)</button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active">
-                    Credit (Javascript)
-                  </button>
-                </li>
-                <li>
-                  <button class="page-scroll non-active">
-                    Credit (Images)
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item" id="">
-              <button class="page-scroll non-active">Support</button>
-            </li>
-            <li class="nav-item" id="">
-              <button class="page-scroll non-active">Thanks</button>
-            </li>
-          </ul>
         </div>
-      </div>
-      <!-- navbar -->
-      <div class="column">
-        <div id="introduction" class="colums_div block">
-          <h2>Real Estate React Template.</h2>
-
-          <table>
-            <tr>
-              <td>Created :</td>
-              <td>October 12, 2021</td>
-            </tr>
-            <tr>
-              <td>By :</td>
-              <td>TunaTheme</td>
-            </tr>
-            <tr>
-              <td>E-mail :</td>
-              <td>intellidigital.com</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:intellidigital.com">intellidigital.com</a>
-          </p>
-        </div>
-        <div id="what_included" class="colums_div">
-          <h2>What's Included</h2>
-
-          <div class="img">
-            <img src="./img/ss/item.png" alt="" />
+        <!-- navbar -->
+        <div class="col-lg-10">
+          <div class="tab-content" id="myTabContent">
+            <div
+              id="introduction"
+              class="tab-pane fade show active"
+              role="tabpanel"
+              aria-labelledby="introduction-tab"
+            >
+              <h2>Real Estate React Template.</h2>
+              <table>
+                <tr>
+                  <td>Created :</td>
+                  <td>October 12, 2021</td>
+                </tr>
+                <tr>
+                  <td>By :</td>
+                  <td>TunaTheme</td>
+                </tr>
+                <tr>
+                  <td>E-mail :</td>
+                  <td>intellidigital.com</td>
+                </tr>
+              </table>
+              <p>
+                Thank you for purchasing our template. If you have any questions
+                that are beyond the scope of this help file, Please feel free to
+                contact us with sending mail to
+                <a href="mailto:intellidigital.com">intellidigital.com</a>
+              </p>
+            </div>
+            <div
+              id="what_included"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="what_included-tab"
+            >
+              <h2>What's Included</h2>
+              <div class="img">
+                <img class="img-fluid" src="./img/ss/item.png" alt="" />
+              </div>
+            </div>
+            <div
+              id="title_favicon"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="title_favicon-tab"
+            >
+              <h2>Title Favicon</h2>
+              <div class="img">
+                <img class="img-fluid" src="./img/ss/item-1.png" alt="" />
+              </div>
+            </div>
+            <div
+              id="logo"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="logo-tab"
+            >
+              <h2>Logo</h2>
+              <p>
+                Replace your logo on Software
+                <span class="img_path">
+                  Solution Providing Company/assets/images/logo
+                </span>
+                as the same name.
+              </p>
+              <div class="img">
+                <img class="img-fluid" src="./img/ss/item-2.png" alt="" />
+              </div>
+            </div>
+            <div
+              id="menu"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="menu-tab"
+            >
+              <h2>Customize Menu</h2>
+              <div class="img">
+                <img class="img-fluid" src="./img/ss/item-3.png" alt="" />
+              </div>
+            </div>
+            <div
+              id="footer"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="footer-tab"
+            >
+              <h2>Footer</h2>
+              <div class="img">
+                <img class="img-fluid" src="./img/ss/item-4.png" alt="" />
+              </div>
+            </div>
+            <div
+              id="credit_fonts"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="credit_fonts-tab"
+            >
+              <h2>Credit-Fonts</h2>
+              <table>
+                <tr>
+                  <td>Google Fonts</td>
+                </tr>
+                <tr>
+                  <td>Font-family :</td>
+                  <td>'Nunito Sans', sans-serif</td>
+                </tr>
+                <tr>
+                  <td>Icon Fonts</td>
+                </tr>
+                <tr>
+                  <td>Phosphor Icon :</td>
+                  <td>Phosphor Icon</td>
+                </tr>
+              </table>
+            </div>
+            <div
+              id="credit_css"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="credit_css-tab"
+            >
+              <h2>Credit-CSS</h2>
+              <table>
+                <tr>
+                  <td>Flugins Used for CSS:</td>
+                </tr>
+                <tr>
+                  <td>Bootstrap :</td>
+                  <td>Bootstrap</td>
+                </tr>
+                <tr>
+                  <td>Slick Slider :</td>
+                  <td>Slick Slider</td>
+                </tr>
+              </table>
+            </div>
+            <div
+              id="credit_js"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="credit_js-tab"
+            >
+              <h2>Credit-JS</h2>
+              <table>
+                <tr>
+                  <td>Flugins Used for JavaScript:</td>
+                </tr>
+                <tr>
+                  <td>jQuery Library :</td>
+                  <td>jQuery</td>
+                </tr>
+                <tr>
+                  <td>Bundle Bootstrap :</td>
+                  <td>Bundle Bootstrap</td>
+                </tr>
+                <tr>
+                  <td>Bootstrap :</td>
+                  <td>Bootstrap</td>
+                </tr>
+                <tr>
+                  <td>Slick Slider :</td>
+                  <td>Slick Slider</td>
+                </tr>
+                <tr>
+                  <td>Scroll Up :</td>
+                  <td>Scroll Up</td>
+                </tr>
+              </table>
+            </div>
+            <div
+              id="credit_images"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="credit_images-tab"
+            >
+              <h2>Credit Images</h2>
+              <table>
+                <tr>
+                  <td>Unsplash :</td>
+                  <td>Unsplash</td>
+                </tr>
+              </table>
+              <p>
+                Thank you for purchasing our template. If you have any questions
+                that are beyond the scope of this help file, Please feel free to
+                contact us with sending mail to
+                <a href="mailto:intellidigital.com">intellidigital.com</a>
+              </p>
+            </div>
+            <div
+              id="support"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="support-tab"
+            >
+              <h2>Support</h2>
+              <p>
+                Thank you for purchasing our template. If you have any questions
+                that are beyond the scope of this help file, Please feel free to
+                contact us with sending mail to
+                <a href="mailto:intellidigital.com">intellidigital.com</a>
+              </p>
+            </div>
+            <div
+              id="thanks"
+              class="tab-pane fade"
+              role="tabpanel"
+              aria-labelledby="thanks-tab"
+            >
+              <h2>Thanks</h2>
+              <table>
+                <tr>
+                  <td>
+                    Once again thank you for purchasing one of our Templates
+                  </td>
+                </tr>
+                <tr>
+                  <td>Best Regards</td>
+                </tr>
+                <tr>
+                  <td>Intelli Theme</td>
+                </tr>
+              </table>
+              <p>
+                Copyright
+                <a href="mailto:intellidigital.com">intellidigital.com</a> made
+                with the Documenter v1.0.0
+              </p>
+            </div>
           </div>
-        </div>
-        <div id="title_favicon" class="colums_div">
-          <h2>Title Favicon</h2>
-
-          <div class="img">
-            <img src="./img/ss/item-1.png" alt="" />
-          </div>
-        </div>
-        <div id="logo" class="colums_div">
-          <h2>Logo</h2>
-          <p>
-            Replace your logo on Software
-            <span class="img_path">
-              Solution Providing Company/assets/images/logo
-            </span>
-            as the same name.
-          </p>
-          <div class="img">
-            <img src="./img/ss/item-2.png" alt="" />
-          </div>
-        </div>
-        <div id="menu" class="colums_div">
-          <h2>Customize Menu</h2>
-          <div class="img">
-            <img src="./img/ss/item-3.png" alt="" />
-          </div>
-        </div>
-        <div id="footer" class="colums_div">
-          <h2>Footer</h2>
-
-          <div class="img">
-            <img src="./img/ss/item-4.png" alt="" />
-          </div>
-        </div>
-        <!-- <div id="copyright" class="colums_div">
-          <div class="heading">
-            <h2>Copyright</h2>
-          </div>
-          <h2>Introduction</h2>
-          <hr />
-
-          <table>
-            <tr>
-              <td>Created :</td>
-              <td>October 12, 2021</td>
-            </tr>
-            <tr>
-              <td>By :</td>
-              <td>TunaTheme</td>
-            </tr>
-            <tr>
-              <td>E-mail :</td>
-              <td>TunaTheme@gmail.com</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:TunaTheme@gmail.com">TunaTheme@gmail.com</a>
-          </p>
-        </div>
-        <div id="section_component" class="colums_div">
-          <div class="heading">
-            <h2>Section Component</h2>
-          </div>
-          <h2>Introduction</h2>
-          <hr />
-
-          <table>
-            <tr>
-              <td>Created :</td>
-              <td>October 12, 2021</td>
-            </tr>
-            <tr>
-              <td>By :</td>
-              <td>TunaTheme</td>
-            </tr>
-            <tr>
-              <td>E-mail :</td>
-              <td>TunaTheme@gmail.com</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:TunaTheme@gmail.com">TunaTheme@gmail.com</a>
-          </p>
-        </div>
-        <div id="page_banner" class="colums_div">
-          <div class="heading">
-            <h2>Page Banner</h2>
-          </div>
-          <h2>Introduction</h2>
-          <hr />
-
-          <table>
-            <tr>
-              <td>Created :</td>
-              <td>October 12, 2021</td>
-            </tr>
-            <tr>
-              <td>By :</td>
-              <td>TunaTheme</td>
-            </tr>
-            <tr>
-              <td>E-mail :</td>
-              <td>TunaTheme@gmail.com</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:TunaTheme@gmail.com">TunaTheme@gmail.com</a>
-          </p>
-        </div>
-        <div id="social_network" class="colums_div">
-          <div class="heading">
-            <h2>Social Network</h2>
-          </div>
-          <h2>Introduction</h2>
-          <hr />
-
-          <table>
-            <tr>
-              <td>Created :</td>
-              <td>October 12, 2021</td>
-            </tr>
-            <tr>
-              <td>By :</td>
-              <td>TunaTheme</td>
-            </tr>
-            <tr>
-              <td>E-mail :</td>
-              <td>TunaTheme@gmail.com</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:TunaTheme@gmail.com">TunaTheme@gmail.com</a>
-          </p>
-        </div>
-        <div id="font_family" class="colums_div">
-          <div class="heading">
-            <h2>Font Family</h2>
-          </div>
-          <h2>Introduction</h2>
-          <hr />
-
-          <table>
-            <tr>
-              <td>Created :</td>
-              <td>October 12, 2021</td>
-            </tr>
-            <tr>
-              <td>By :</td>
-              <td>TunaTheme</td>
-            </tr>
-            <tr>
-              <td>E-mail :</td>
-              <td>TunaTheme@gmail.com</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:TunaTheme@gmail.com">TunaTheme@gmail.com</a>
-          </p>
-        </div>
-        <div id="color_change" class="colums_div">
-          <div class="heading">
-            <h2>Color Change</h2>
-          </div>
-          <h2>Introduction</h2>
-          <hr />
-
-          <table>
-            <tr>
-              <td>Created :</td>
-              <td>October 12, 2021</td>
-            </tr>
-            <tr>
-              <td>By :</td>
-              <td>TunaTheme</td>
-            </tr>
-            <tr>
-              <td>E-mail :</td>
-              <td>TunaTheme@gmail.com</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:TunaTheme@gmail.com">TunaTheme@gmail.com</a>
-          </p>
-        </div> -->
-        <div id="credit_fonts" class="colums_div">
-          <h2>Credit-Fonts</h2>
-
-          <table>
-            <tr>
-              <td>Google Fonts</td>
-            </tr>
-            <tr>
-              <td>Font-family :</td>
-              <td>'Nunito Sans', sans-serif</td>
-            </tr>
-            <tr>
-              <td>Icon Fonts</td>
-            </tr>
-            <tr>
-              <td>Phosphor Icon :</td>
-              <td>Phosphor Icon</td>
-            </tr>
-          </table>
-        </div>
-        <div id="credit_css" class="colums_div">
-          <h2>Credit-CSS</h2>
-
-          <table>
-            <tr>
-              <td>Flugins Used for CSS:</td>
-            </tr>
-            <tr>
-              <td>Bootstrap :</td>
-              <td>Bootstrap</td>
-            </tr>
-            <tr>
-              <td>Slick Slider :</td>
-              <td>Slick Slider</td>
-            </tr>
-          </table>
-        </div>
-        <div id="credit_js" class="colums_div">
-          <h2>Credit-JS</h2>
-
-          <table>
-            <tr>
-              <td>Flugins Used for JavaScript:</td>
-            </tr>
-            <tr>
-              <td>jQuery Library :</td>
-              <td>jQuery</td>
-            </tr>
-            <tr>
-              <td>Bundle Bootstrap :</td>
-              <td>Bundle Bootstrap</td>
-            </tr>
-            <tr>
-              <td>Bootstrap :</td>
-              <td>Bootstrap</td>
-            </tr>
-            <tr>
-              <td>Slick Slider :</td>
-              <td>Slick Slider</td>
-            </tr>
-            <tr>
-              <td>Scroll Up :</td>
-              <td>Scroll Up</td>
-            </tr>
-          </table>
-        </div>
-        <div id="credit_images" class="colums_div">
-          <h2>Credit Images</h2>
-
-          <table>
-            <tr>
-              <td>Unsplash :</td>
-              <td>Unsplash</td>
-            </tr>
-          </table>
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:intellidigital.com">intellidigital.com</a>
-          </p>
-        </div>
-        <div id="support" class="colums_div">
-          <h2>Support</h2>
-
-          <p>
-            Thank you for purchasing our template. If you have any questions
-            that are beyond the scope of this help file, Please feel free to
-            contact us with sending mail to
-            <a href="mailto:intellidigital.com">intellidigital.com</a>
-          </p>
-        </div>
-        <div id="thanks" class="colums_div">
-          <h2>Thanks</h2>
-
-          <table>
-            <tr>
-              <td>Once again thank you for purchasing one of our Templates</td>
-            </tr>
-            <tr>
-              <td>Best Regards</td>
-            </tr>
-            <tr>
-              <td>Intelli Theme</td>
-            </tr>
-          </table>
-          <p>
-            Copyright
-            <a href="mailto:intellidigital.com">intellidigital.com</a> made with
-            the Documenter v1.0.0
-          </p>
         </div>
       </div>
     </div>
 
     <!-- js -->
-    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
     <script src="./js/plugins.js"></script>
-    <script src="./js/default.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
     <script>
-      const controls = document.querySelectorAll(".page-scroll");
-      const tabs = document.querySelectorAll(".colums_div");
+      var triggerTabList = [].slice.call(document.querySelectorAll("#myTab a"));
+      triggerTabList.forEach(function (triggerEl) {
+        var tabTrigger = new bootstrap.Tab(triggerEl);
 
-      // display none for 1-length tabs
-      for (let i = 1; i < tabs.length; i++) {
-        tabs[i].className = "colums_div none";
-      }
-
-      // set value forl all tabs
-      for (let i = 0; i < tabs.length; i++) {
-        tabs[i].setAttribute("value", i);
-      }
-
-      // add event listener for all controls
-      for (let i = 0; i < controls.length; i++) {
-        controls[i].setAttribute("value", i);
-        controls[i].addEventListener("click", displayTab);
-      }
-
-      // display tab function
-      function displayTab() {
-        for (let i = 0; i < tabs.length; i++) {
-          tabs[i].className = "colums_div none";
-          controls[i].removeAttribute("id");
-        }
-        tabs[this.value].className = "colums_div block";
-        controls[this.value].setAttribute("id", "control-selected");
-      }
+        triggerEl.addEventListener("click", function (event) {
+          event.preventDefault();
+          tabTrigger.show();
+        });
+      });
     </script>
   </body>
 </html>
