@@ -16,200 +16,213 @@
     <div class="container-fluid">
       <div class="row">
         <!-- navbar -->
-        <div class="col-lg-2">
-          <div
-            class="nav align-items-start justify-content-start w-100 left-nav"
+        <div class="col-lg-2 col-md-12">
+          <nav
+            class="navbar navbar-expand-lg nav align-items-start justify-content-start left-nav"
           >
-            <div class="nav-img navbar-brand">
-              <img class="img-fluid" src="./img/logo.png" alt="" />
+            <div class="">
+              <div class="navbar-brand">
+                <img class="img-fluid" src="./img/logo.png" alt="" />
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <ul
+                class="navbar-nav nav nav-tabs gap-3 w-100 flex-md-row"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="introduction-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#introduction"
+                    type="button"
+                    role="tab"
+                    aria-controls="introduction"
+                    aria-selected="true"
+                  >
+                    Introduction
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="">Getting Started</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="what_included-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#what_included"
+                    type="button"
+                    role="tab"
+                    aria-controls="what_included"
+                    aria-selected="false"
+                  >
+                    What's Included
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="">Settings</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="title_favicon-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#title_favicon"
+                    type="button"
+                    role="tab"
+                    aria-controls="title_favicon"
+                    aria-selected="false"
+                  >
+                    Site Title and Favicon
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="logo-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#logo"
+                    type="button"
+                    role="tab"
+                    aria-controls="logo"
+                    aria-selected="false"
+                  >
+                    Logo
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="menu-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#menu"
+                    type="button"
+                    role="tab"
+                    aria-controls="menu"
+                    aria-selected="false"
+                  >
+                    Menu
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="footer-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#footer"
+                    type="button"
+                    role="tab"
+                    aria-controls="footer"
+                    aria-selected="false"
+                  >
+                    Footer
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="">Credit</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="credit_fonts-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#credit_fonts"
+                    type="button"
+                    role="tab"
+                    aria-controls="credit_fonts"
+                    aria-selected="false"
+                  >
+                    Credit (Fonts)
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="credit_css-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#credit_css"
+                    type="button"
+                    role="tab"
+                    aria-controls="credit_css"
+                    aria-selected="false"
+                  >
+                    Credit (CSS)
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="credit_js-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#credit_js"
+                    type="button"
+                    role="tab"
+                    aria-controls="credit_js"
+                    aria-selected="false"
+                  >
+                    Credit (Javascript)
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="credit_images-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#credit_images"
+                    type="button"
+                    role="tab"
+                    aria-controls="credit_images"
+                    aria-selected="false"
+                  >
+                    Credit (Images)
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="support-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#support"
+                    type="button"
+                    role="tab"
+                    aria-controls="support"
+                    aria-selected="false"
+                  >
+                    Support
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="thanks-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#thanks"
+                    type="button"
+                    role="tab"
+                    aria-controls="thanks"
+                    aria-selected="false"
+                  >
+                    Thanks
+                  </button>
+                </li>
+              </ul>
             </div>
-            <ul
-              class="navbar-nav nav nav-tabs gap-3 w-100"
-              id="myTab"
-              role="tablist"
-            >
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="introduction-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#introduction"
-                  type="button"
-                  role="tab"
-                  aria-controls="introduction"
-                  aria-selected="true"
-                >
-                  Introduction
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="">Getting Started</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="what_included-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#what_included"
-                  type="button"
-                  role="tab"
-                  aria-controls="what_included"
-                  aria-selected="false"
-                >
-                  What's Included
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="">Settings</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="title_favicon-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#title_favicon"
-                  type="button"
-                  role="tab"
-                  aria-controls="title_favicon"
-                  aria-selected="false"
-                >
-                  Site Title and Favicon
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="logo-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#logo"
-                  type="button"
-                  role="tab"
-                  aria-controls="logo"
-                  aria-selected="false"
-                >
-                  Logo
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="menu-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#menu"
-                  type="button"
-                  role="tab"
-                  aria-controls="menu"
-                  aria-selected="false"
-                >
-                  Menu
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="footer-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#footer"
-                  type="button"
-                  role="tab"
-                  aria-controls="footer"
-                  aria-selected="false"
-                >
-                  Footer
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="">Credit</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="credit_fonts-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#credit_fonts"
-                  type="button"
-                  role="tab"
-                  aria-controls="credit_fonts"
-                  aria-selected="false"
-                >
-                  Credit (Fonts)
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="credit_css-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#credit_css"
-                  type="button"
-                  role="tab"
-                  aria-controls="credit_css"
-                  aria-selected="false"
-                >
-                  Credit (CSS)
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="credit_js-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#credit_js"
-                  type="button"
-                  role="tab"
-                  aria-controls="credit_js"
-                  aria-selected="false"
-                >
-                  Credit (Javascript)
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="credit_images-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#credit_images"
-                  type="button"
-                  role="tab"
-                  aria-controls="credit_images"
-                  aria-selected="false"
-                >
-                  Credit (Images)
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="support-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#support"
-                  type="button"
-                  role="tab"
-                  aria-controls="support"
-                  aria-selected="false"
-                >
-                  Support
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="thanks-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#thanks"
-                  type="button"
-                  role="tab"
-                  aria-controls="thanks"
-                  aria-selected="false"
-                >
-                  Thanks
-                </button>
-              </li>
-            </ul>
-          </div>
+          </nav>
         </div>
         <!-- navbar -->
-        <div class="col-lg-10">
+        <div class="col-lg-10 col-md-12">
           <div class="tab-content" id="myTabContent">
             <div
               id="introduction"
